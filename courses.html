@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - EduTech</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <a href="index.html" style="text-decoration: none; color: white;"><span>EduTech</span></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link login-btn">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="signup.html" class="nav-link signup-btn">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#logout" class="nav-link logout-btn">Logout</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="page-header-content">
+                <h1>Our Popular Courses</h1>
+                <p>Master Computer Science and Technology with Expert-Led Courses</p>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section class="courses-section">
+            <div class="courses-filter">
+                <button class="filter-btn active" data-filter="all">All Courses</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="programming">Programming</button>
+                <button class="filter-btn" data-filter="data">Data Science</button>
+            </div>
+
+            <div class="courses-container">
+                
+                <div class="course-card" data-category="web">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400" alt="Web Development">
+                    </div>
+                    <div class="course-content">
+                        <h3>Web Development</h3>
+                        <p class="course-description">Learn HTML, CSS, JavaScript, and build responsive websites from scratch.</p>
+                        <p class="course-duration"><i class="fas fa-clock"></i> 8 Weeks</p>
+                        <p class="course-price">$49.99</p>
+                        <button class="enroll-btn">Enroll Now</button>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="programming">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f70d504f0?w=400" alt="Python Programming">
+                    </div>
+                    <div class="course-content">
+                        <h3>Python Programming</h3>
+                        <p class="course-description">Master Python from beginner to advanced level with real-world projects.</p>
+                        <p class="course-duration"><i class="fas fa-clock"></i> 10 Weeks</p>
+                        <p class="course-price">$59.99</p>
+                        <button class="enroll-btn">Enroll Now</button>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="data">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1614070494888-a83b35b61947?w=400" alt="Data Science">
+                    </div>
+                    <div class="course-content">
+                        <h3>Data Science & Analytics</h3>
+                        <p class="course-description">Learn data analysis, visualization, and machine learning fundamentals.</p>
+                        <p class="course-duration"><i class="fas fa-clock"></i> 12 Weeks</p>
+                        <p class="course-price">$79.99</p>
+                        <button class="enroll-btn">Enroll Now</button>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="web">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400" alt="JavaScript">
+                    </div>
+                    <div class="course-content">
+                        <h3>Advanced JavaScript</h3>
+                        <p class="course-description">Deep dive into ES6+, async programming, and modern JavaScript frameworks.</p>
+                        <p class="course-duration"><i class="fas fa-clock"></i> 8 Weeks</p>
+                        <p class="course-price">$69.99</p>
+                        <button class="enroll-btn">Enroll Now</button>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="programming">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1633356715007-1c87b98f0c5d?w=400" alt="Cybersecurity">
+                    </div>
+                    <div class="course-content">
+                        <h3>Cybersecurity Basics</h3>
+                        <p class="course-description">Understand security fundamentals, encryption, and network protection strategies.</p>
+                        <p class="course-duration"><i class="fas fa-clock"></i> 9 Weeks</p>
+                        <p class="course-price">$74.99</p>
+                        <button class="enroll-btn">Enroll Now</button>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="web">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1633356715007-1c87b98f0c5d?w=400" alt="Mobile App Development">
+                    </div>
+                    <div class="course-content">
+                        <h3>Mobile App Development</h3>
+                        <p class="course-description">Create iOS and Android apps using React Native and Flutter frameworks.</p>
+                        <p class="course-duration"><i class="fas fa-clock"></i> 10 Weeks</p>
+                        <p class="course-price">$64.99</p>
+                        <button class="enroll-btn">Enroll Now</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Contact Information</h4>
+                <p><i class="fas fa-envelope"></i> Email: info@edutech.com</p>
+                <p><i class="fas fa-phone"></i> Phone: +1 (555) 123-4567</p>
+                <p><i class="fas fa-map-marker-alt"></i> Location: 123 Tech Street, Silicon Valley, CA</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section developer-profile">
+                <h4>Developer Profile</h4>
+                <p class="developer-name">Created by Your Name</p>
+                <p class="developer-title">Full Stack Web Developer</p>
+                <p class="developer-bio">Passionate about creating beautiful and functional web applications.</p>
+                <p class="developer-year">© 2026 All Rights Reserved</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 EduTech. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+    <script src="js/pages.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
